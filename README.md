@@ -1,2 +1,2 @@
 # Athina-International-School
-([text]https://calkilinochchi.github.io/Athina-International-School/)
+([text]https://ezhilsanth.github.io/Athina-International-School//)
