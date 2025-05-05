@@ -334,8 +334,14 @@ a, button {
 	width: 90%;
 	border-radius: 5px;
 }
+.rowback{
+	background: url(000.jpg);
+	width: 1000px;
+	height: 600px;
+ }
+ 
 .sideImage {
-	transform: translateX(100px);
+	transform: translateX(500px);
 	opacity: 0;
 	transition: .8s ease-in-out;
 }
