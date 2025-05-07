@@ -132,26 +132,26 @@ function display(n) {
   img2.style = 'display: none;';
   img3.style = 'display: none;';
   img4.style = 'display: none;';
-  s1.style = 'background: #DF2771; color: #FFF;';
-  s2.style = 'background: #DF2771; color: #FFF;';
-  s3.style = 'background: #DF2771; color: #FFF;';
-  s4.style = 'background: #DF2771; color: #FFF;';
+  s1.style = 'background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
+  s2.style = 'background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
+  s3.style = 'background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
+  s4.style = 'background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
 
   if(n==1) {
     img1.style = 'display: block;';
-    s1.style = 'background: #E5E8EF; color: #DF2771;';
+    s1.style = 'background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
   }
   if(n==2) {
     img2.style = 'display: block;';
-    s2.style = 'background: #E5E8EF; color: #DF2771;';
+    s2.style ='background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
   }
   if(n==3) {
     img3.style = 'display: block;';
-    s3.style = 'background: #E5E8EF; color: #DF2771;';
+    s3.style = 'background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
   }
   if(n==4) {
     img4.style = 'display: block;';
-    s4.style = 'background: #E5E8EF; color: #DF2771;';
+    s4.style = 'background:rgb(51, 67, 119); color:rgb(128, 117, 19);';
   } 
 }
 

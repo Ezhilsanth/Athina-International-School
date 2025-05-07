@@ -334,6 +334,10 @@ a, button {
 	width: 90%;
 	border-radius: 5px;
 }
+
+#about:hover{
+     box-shadow: #272529;
+}
 .rowback{
 	background: url(000.jpg);
 	width: 1000px;
