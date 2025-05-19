@@ -166,6 +166,10 @@ a, button {
 	
 
 }
+.svg-image:hover{
+     background-color: #4e64c5;
+
+}
 
 /* SIDE MENU */
 .menu {
@@ -307,7 +311,7 @@ a, button {
 .title {
 	 margin-top: 0px; 
 	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	color: #2E3D49;
 }
@@ -333,6 +337,12 @@ a, button {
 	opacity: 0;
 	transform: translateX(-100px);
 	transition: 1s ease-in-out;
+}
+ .sideImage:hover {
+     background-color: yellow;
+}
+.side-text:hover{
+	background-color: #b5babd;
 }
 .about-content .side-text-appear {
 	opacity: 1;
@@ -361,9 +371,17 @@ a, button {
 	transform: translateX(0px);
 }
 .p img{
-	width: 1000px;
-	border-radius: 5px ,5px, 5px ,5px;
+	width:1000px;
+	border-radius: 4%;
 	border: 8px solid;
+	box-sizing: 40px 20px 20px;
+	filter: drop-shadow(0 30px 20px rgba(194, 73, 73, 0.2));
+	padding: 2px;
+	
+}
+.side-image:hover{
+    background: linear-gradient(green white);
+	
 }
 .side-text.border{
 	width: 10px;
@@ -427,7 +445,7 @@ a, button {
 	border: 1px solid white;
 	background: linear-gradient(to left, #ffffff, #4e64c5);
 	font-size: 15px;
-	color: #272529;
+	color: #a8a2ad;
 	font-family: cursive;
 	text-decoration: none;
 }
