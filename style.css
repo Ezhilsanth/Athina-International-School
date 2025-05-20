@@ -341,9 +341,13 @@ a, button {
  .sideImage:hover {
      background-color: yellow;
 }
+.sideImage:active{
+	color: #1420be;
+}
 .side-text:hover{
 	background-color: #b5babd;
 }
+
 .about-content .side-text-appear {
 	opacity: 1;
 	transform: translateX(0px);
@@ -421,6 +425,10 @@ a, button {
 #color{
     background: linear-gradient(rgb(192, 186, 186),white);
 
+}
+.title-text{
+	padding: 0%;
+	margin: 0%;
 }
 .cbox {
 	position: relative;

@@ -60,8 +60,11 @@ body {
 	margin-right: 10px;
 	transform: translateY(5px);
 	padding-top: 5px;
+   
 }
-
+.s i{
+background-color: blue;
+}
 .nav ul li 
 {
 	list-style: none;
@@ -138,7 +141,7 @@ body {
 	margin-left: 100px;
 }
 .title span{
-	font-weight: 700;
+	font-weight: 50;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 60px;
 	color: #2E3D49;
