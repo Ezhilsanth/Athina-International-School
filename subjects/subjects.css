@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+	--primary-color: #1420be;
+	--primary-gradient: linear-gradient(135deg, #1420be 0%, #3b82f6 100%);
+	--dark-navy: #0f172a;
+	--text-dark: #1e293b;
+	--text-muted: #64748b;
+	--bg-light: #f8fafc;
+	--border-light: #e2e8f0;
+	--shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--bg-light);
+	font-family: 'Open Sans', sans-serif;
+	color: var(--text-dark);
+	line-height: 1.6;
+}
+
+/* NAVIGATION */
+.nav {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 4%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.school-brand {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	text-decoration: none;
+}
+
+.school-brand img {
+	height: 45px;
+}
+
+.school-brand h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: var(--primary-color);
+	font-size: 1.2rem;
+}
+
+.nav ul {
+	display: flex;
+	gap: 15px;
+	list-style: none;
+	align-items: center;
+}
+
+.nav ul li a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: var(--text-dark);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	padding: 6px 12px;
+	border-radius: 8px;
+	transition: all 0.3s;
+}
+
+.nav ul li a:hover {
+	color: var(--primary-color);
+	background: rgba(20, 32, 190, 0.08);
+}
+
+.nav ul li a img.icon {
+	width: 18px;
+	height: 18px;
+}
+
+/* PAGE HEADER TITLE */
+.title {
+	margin-top: 110px;
+	text-align: center;
+	padding: 30px 20px 10px;
+}
+
+.title span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: var(--dark-navy);
+}
+
+.inbt {
+	text-align: center;
+	font-size: 1.1rem;
+	color: var(--text-muted);
+	margin-bottom: 30px;
+}
+
+/* COURSE CARDS GRID */
+.ccard {
+	max-width: 1200px;
+	margin: 0 auto 50px;
+	padding: 0 20px;
+}
+
+.ccardbox {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+.dcard {
+	background: #fff;
+	border-radius: 16px;
+	overflow: hidden;
+	width: 280px;
+	box-shadow: var(--shadow-md);
+	border: 1px solid var(--border-light);
+	transition: transform 0.3s;
+}
+
+.dcard:hover {
+	transform: translateY(-50px);
+}
+
+.fpart img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+}
+
+.spart {
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+}
+
+.spart img {
+	width: 16px;
+}
+
+/* MODULE SECTION */
+.title2 {
+	max-width: 1200px;
+	margin: 40px auto 20px;
+	padding: 0 20px;
+}
+
+.title2 span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+
+.shortdesc2 p {
+	color: var(--text-muted);
+	font-size: 0.95rem;
+}
+
+.ccardbox2 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	max-width: 1200px;
+	margin: 0 auto 50px;
+	padding: 0 20px;
+}
+
+.dcard2 {
+	background: #fff;
+	border-radius: 12px;
+	overflow: hidden;
+	width: 320px;
+	box-shadow: var(--shadow-md);
+	border: 1px solid var(--border-light);
+	position: relative;
+}
+
+.dcard2 .tag {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: var(--primary-color);
+	color: #fff;
+	padding: 4px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 700;
+	z-index: 2;
+}
+
+.fpart2 {
+	position: relative;
+	height: 200px;
+}
+
+.fpart2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fpart2 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* FOOTER */
+footer {
+	background: var(--dark-navy);
+	color: #94a3b8;
+	padding: 50px 5% 20px;
+	margin-top: 60px;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 35px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col h3 {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+}
+
+.footer-col p {
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+.footer-col a {
+	color: #cbd5e1;
+	text-decoration: none;
+}
+
+.footer-col a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footer-bottom {
+	max-width: 1200px;
+	margin: 20px auto 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	font-size: 0.85rem;
+	color: #64748b;
+}
+
+.footer-bottom p {
+	margin: 0;
+}
+
+/* RESPONSIVE */
+.switch-tab {
+	display: none;
+	cursor: pointer;
+}
+
+.switch-tab img {
+	width: 25px;
+}
+
+@media (max-width: 900px) {
+	.switch-tab {
+		display: block;
+	}
+	#list-switch {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Athina International School in Kandy, Sri Lanka provides Play School, Pre-School, Primary, and Secondary education. Affiliated with Naburn CE Primary School (UK).">
+	<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png">
+	<title>Athina International School | Kandy, Sri Lanka</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="subjects/subjects.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js" defer></script>
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop() > 50) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo-container">
+				<a href="index.html" class="nav-link"><img src="images/icon/logo.png" alt="Athina International School Logo"></a>
+				<a href="index.html" class="nav-link">
+					<h2>Athina International School</h2>
+				</a>
+			</div>
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="#about_section">About Us</a></li>
+				<li><a href="#curriculum_section">Curriculum</a></li>
+				<li><a href="#portfolio_section">Highlights</a></li>
+				<li><a href="#team_section">Leadership</a></li>
+				<li><a href="#services_section">Facilities</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<a class="get-started" href="login.html">Portal Login</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="Mobile Menu">
+		</nav>
+
+		<!-- Mobile Side Menu -->
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt="Close Menu"></div>
+			<div class="user">
+				<img src="images/icon/logo.png" alt="Athina School">
+				<p>Athina Portal</p>
+			</div>
+			<ul>
+				<li><a href="index.html" onclick="sideMenu(1)">Home</a></li>
+				<li><a href="#about_section" onclick="sideMenu(1)">About Us</a></li>
+				<li><a href="#curriculum_section" onclick="sideMenu(1)">Curriculum</a></li>
+				<li><a href="#portfolio_section" onclick="sideMenu(1)">Highlights</a></li>
+				<li><a href="#team_section" onclick="sideMenu(1)">Leadership</a></li>
+				<li><a href="#services_section" onclick="sideMenu(1)">Facilities</a></li>
+				<li><a href="#contactus_section" onclick="sideMenu(1)">Contact Us</a></li>
+				<li><a href="login.html">Student / Parent Portal</a></li>
+			</ul>
+		</div>
+
+		<!-- Hero Section -->
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Welcome to Athina International School - Kandy! It is my honour and privilege to serve as the Principal of this exceptional school, where we are committed to fostering an environment of academic excellence, personal growth, and innovation. At Athina International, we prioritize not only intellectual development but also emotional and social well-being, preparing students to succeed as compassionate global citizens.</h5>
+				<div class="play">
+					<img src="images/icon/play.png" alt="Watch Video">
+					<span><a href="https://www.facebook.com/athenainternationalkandy/" target="_blank">Discover Athina International</a></span>
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/101.jpg" alt="Athina International School Campus">
+			</div>
+		</div>
+	</header>
+
+	<!-- Curriculum & Subjects Section -->
+	<section class="title-text" id="curriculum_section">
+		<div class="section-header">
+			<h2>Our Educational Curriculum</h2>
+		</div>
+		<div class="cbox">
+			<div class="det">
+				<a href="subjects/science.html">
+					<img src="images/courses/d1.png" alt="Science & STEM">
+					<span>Science & STEM</span>
+				</a>
+			</div>
+			<div class="det">
+				<a href="subjects/mathematics.html">
+					<img src="images/courses/121.png" alt="Mathematics & Logic">
+					<span>Mathematics & Logic</span>
+				</a>
+			</div>
+			<div class="det">
+				<a href="subjects/computer_courses.html">
+					<img src="images/courses/computer.png" alt="ICT & Robotics">
+					<span>ICT & Coding</span>
+				</a>
+			</div>
+			<div class="det">
+				<a href="subjects/science.html#sample_papers">
+					<img src="images/courses/paper.png" alt="Sample Papers">
+					<span>Sample Worksheets</span>
+				</a>
+			</div>
+			<div class="det">
+				<a href="subjects/quiz.html">
+					<img src="images/courses/0002.png" alt="Music & Arts">
+					<span>Music & Creative Arts</span>
+				</a>
+			</div>
+			<div class="det">
+				<a href="subjects/computer_courses.html#data">
+					<img src="images/courses/algo.png" alt="English Studies">
+					<span>English & Speech</span>
+				</a>
+			</div>
+			<div class="det">
+				<a href="subjects/computer_courses.html#projects">
+					<img src="images/courses/projects.png" alt="Robotics & Projects">
+					<span>Robotics & Projects</span>
+				</a>
+			</div>
+			<div class="det">
+				<a href="subjects/quiz.html">
+					<img src="images/courses/0002.png" alt="Interactive Quiz">
+					<span>Student IQ Quiz</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="diffSection" id="about_section">
+		<div class="section-header">
+			<h2>About Athina International School</h2>
+		</div>
+		<div class="about-content">
+			<div class="side-image">
+				<img class="sideImage" src="000.jpg" alt="Athina International School Community">
+			</div>
+			<div class="side-text">
+				<h2>Nurturing Global Ambassadors</h2>
+				<p>Founded in 2019, Athina International School – Kandy (AIS) embarked on its journey under the visionary leadership of Mrs. E. J. Jacob. Guided by our mission to nurture <strong>‘Global Ambassadors for a Sustainable World’</strong>, Athina International brings accessible, UK-aligned international standard education to children in Kandy.</p>
+				<p>Affiliated with <strong>Naburn CE Primary School (UK)</strong>, AIS works closely with educational experts to create an inquiry-based pedagogy. Our vibrant community spans Play School, Pre-School, Primary, and Secondary education (up to Grade 9), supported by dedicated local and foreign educators.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Highlights / Statistics Section -->
+	<section class="diffSection" id="portfolio_section">
+		<div class="section-header">
+			<h2>Key School Highlights</h2>
+		</div>
+		<div class="extra">
+			<h3>Empowering Students Every Year</h3>
+			<div class="smbox">
+				<span>
+					<div class="data">150+</div>
+					<div class="det">Enrolled Students</div>
+				</span>
+				<span>
+					<div class="data">15+</div>
+					<div class="det">Academic Programs</div>
+				</span>
+				<span>
+					<div class="data">100%</div>
+					<div class="det">UK Curriculum Alignment</div>
+				</span>
+				<span>
+					<div class="data">20+</div>
+					<div class="det">Co-Curricular Clubs</div>
+				</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Leadership & Faculty Section -->
+	<section class="diffSection" id="team_section">
+		<div class="section-header">
+			<h2>School Leadership & Faculty</h2>
+		</div>
+		<div class="totalcard">
+			<div class="card">
+				<img src="images/creator/1715.jpg" alt="Principal Mrs. E. J. Jacob">
+				<div class="card-title">Mrs. E. J. Jacob</div>
+				<div id="detail">
+					<p>“You can teach a student a lesson for a day; but if you can teach them to learn by creating curiosity, learning continues for a lifetime.”</p>
+					<a href="https://www.facebook.com/athenainternationalkandy/" target="_blank">
+						<button class="btn-faculty">Facebook Page</button>
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/creator/1715.jpg" alt="Athina Faculty Team">
+				<div class="card-title">Athina Academic Team</div>
+				<div id="detail">
+					<p>Our passionate faculty of local and foreign qualified educators are committed to fostering academic excellence and character development.</p>
+					<a href="https://www.instagram.com/athenainternationalkandy/" target="_blank">
+						<button class="btn-faculty">Instagram Profile</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Facilities Section -->
+	<section class="service-swipe" id="services_section">
+		<div class="section-header">
+			<h2 style="color: #fff;">Campus Facilities & Activities</h2>
+		</div>
+		<div class="service-grid">
+			<a href="subjects/computer_courses.html" class="s-card">
+				<img src="images/icon/computer-courses.png" alt="ICT & Computer Lab">
+				<p>Computer Laboratory & ICT</p>
+			</a>
+			<a href="subjects/computer_courses.html#robotics" class="s-card">
+				<img src="images/icon/brainbooster.png" alt="Robotics & AI">
+				<p>AI & Robotics Demonstrations</p>
+			</a>
+			<a href="#services_section" class="s-card">
+				<img src="images/icon/102.png" alt="School Library">
+				<p>Library & Resource Centre</p>
+			</a>
+			<a href="#services_section" class="s-card">
+				<img src="images/icon/103.png" alt="Speech & Drama">
+				<p>Speech & Drama Classes</p>
+			</a>
+			<a href="#services_section" class="s-card">
+				<img src="images/icon/discussion.png" alt="Outdoor Play & Swimming">
+				<p>Swimming & Outdoor Athletics</p>
+			</a>
+			<a href="subjects/quiz.html" class="s-card">
+				<img src="images/icon/0002.png" alt="Music & Dancing">
+				<p>Music & Cultural Dancing</p>
+			</a>
+			<a href="#services_section" class="s-card">
+				<img src="images/icon/104.png" alt="Indoor Play Zone">
+				<p>Play School & Pre-School Zone</p>
+			</a>
+			<a href="subjects/science.html#sample_papers" class="s-card">
+				<img src="images/icon/papers.jpg" alt="Worksheets">
+				<p>Sample Worksheets & Guides</p>
+			</a>
+		</div>
+	</section>
+
+	<!-- Contact Us Section -->
+	<section class="diffSection" id="contactus_section">
+		<div class="section-header">
+			<h2>Contact Athina International School</h2>
+		</div>
+		<div class="back-contact">
+			<div class="cc">
+				<form id="contactForm" onsubmit="handleContactSubmit(event)">
+					<div class="form-row">
+						<div>
+							<label>First Name <span class="imp">*</span></label>
+							<input type="text" id="fname" required placeholder="John">
+						</div>
+						<div>
+							<label>Last Name <span class="imp">*</span></label>
+							<input type="text" id="lname" required placeholder="Doe">
+						</div>
+					</div>
+					<div>
+						<label>Email Address <span class="imp">*</span></label>
+						<input type="email" id="cemail" required placeholder="example@email.com">
+					</div>
+					<div>
+						<label>Phone Number</label>
+						<input type="tel" id="cphone" placeholder="+94 77 123 4567">
+					</div>
+					<div>
+						<label>Inquiry Message <span class="imp">*</span></label>
+						<textarea id="cmessage" required placeholder="Write your inquiry or admission request here..."></textarea>
+					</div>
+					<button type="submit" id="csubmit">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Announcement Marquee -->
+	<div class="marquee-container">
+		<marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="8">
+			Welcome to Athina International School – Kandy | Admissions Open for Playgroup, Pre-School, Primary, and Secondary Levels | Contact us today at +94 70 543 2113 / +94 70 543 2103
+		</marquee>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-container">
+			<div class="footer-col">
+				<img src="images/icon/logo.png" alt="Athina International Logo" style="width: 140px; margin-bottom: 15px;">
+				<p>Athina International School – Kandy<br>Nurturing Global Ambassadors for a Sustainable World.</p>
+				<div class="social-media">
+					<a href="https://www.facebook.com/athenainternationalkandy/" target="_blank" title="Facebook"><img src="images/icon/fb.png" alt="Facebook"></a>
+					<a href="https://www.instagram.com/athenainternationalkandy/" target="_blank" title="Instagram"><img src="images/icon/insta.png" alt="Instagram"></a>
+				</div>
+			</div>
+			<div class="footer-col">
+				<h3>Contact Details</h3>
+				<p><strong>Address:</strong><br>No. 101, Anagarika Dharmapala Mawatha,<br>Kandy, Sri Lanka 2000</p>
+				<p><strong>Phone:</strong><br>+94 70 543 2113 / +94 70 543 2103<br>+94 77 743 2345</p>
+				<p><strong>Email:</strong><br><a href="mailto:athenainternationalkandy@gmail.com">athenainternationalkandy@gmail.com</a></p>
+			</div>
+			<div class="footer-col">
+				<h3>Newsletter</h3>
+				<p>Subscribe to receive news, events, and admission updates from Athina International School.</p>
+				<form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+					<input type="email" placeholder="Enter your email" required>
+					<input type="submit" value="Subscribe">
+				</form>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2026 Athina International School – Kandy, Sri Lanka. All Rights Reserved.</p>
+			<p>Affiliated with Naburn CE Primary School (UK)</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

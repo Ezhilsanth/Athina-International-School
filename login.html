@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png">
+	<title>Student & Parent Portal | Athina International School</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="portal-wrapper">
+		<div class="school-header">
+			<a href="index.html">
+				<img src="images/icon/logo.png" alt="Athina International School Logo" class="school-logo">
+			</a>
+			<h2>Athina International School</h2>
+			<p>Student & Parent Portal</p>
+		</div>
+
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+				<button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+			</div>
+			
+			<div class="social-icons">
+				<a href="https://www.facebook.com/athenainternationalkandy/" target="_blank" title="Facebook Page"><img src="images/icon/fb2.png" alt="Facebook"></a>
+				<a href="https://www.instagram.com/athenainternationalkandy/" target="_blank" title="Instagram Page"><img src="images/icon/insta2.png" alt="Instagram"></a>
+			</div>
+			
+			<!-- Login Form -->
+			<form id="login" class="input-group" action="index.html" onsubmit="alert('Login Successful! Welcome to Athina Portal.');">
+				<div class="inp">
+					<img src="images/icon/user.png" alt="User">
+					<input type="text" id="email" class="input-field" placeholder="Student / Parent ID or Email" required>
+				</div>
+				<div class="inp">
+					<img src="images/icon/password.png" alt="Password">
+					<input type="password" id="password" class="input-field" placeholder="Password" required>
+				</div>
+				<div class="checkbox-row">
+					<input type="checkbox" class="check-box" id="remember">
+					<label for="remember">Remember Me</label>
+				</div>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+			<div class="other" id="other">
+				<div class="instead">
+					<h3>or</h3>
+				</div>
+				<button type="button" class="connect" onclick="google()">
+					<img src="images/icon/google.png" alt="Google">
+					<span>Sign in with Google</span>
+				</button>
+			</div>
+			
+			<!-- Registration Form -->
+			<form id="register" class="input-group" onsubmit="alert('Registration Request Submitted to Athina Portal Admin!');">
+				<div class="inp">
+					<img src="images/icon/user.png" alt="User">
+					<input type="text" class="input-field" placeholder="Full Name" required>
+				</div>
+				<div class="inp">
+					<img src="images/icon/mail.png" alt="Email">
+					<input type="email" class="input-field" placeholder="Email Address" required>
+				</div>
+				<div class="inp">
+					<img src="images/icon/password.png" alt="Password">
+					<input type="password" class="input-field" placeholder="Create Password" required>
+				</div>
+				<div class="inp">
+					<img src="images/icon/password.png" alt="Confirm Password">
+					<input type="password" class="input-field" placeholder="Confirm Password" required>
+				</div>
+				<div class="checkbox-row">
+					<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">
+					<label for="chkAgree">I agree to the Terms & Conditions</label>
+				</div>
+				<button type="submit" id="btnSubmit" class="submit-btn reg-btn" disabled style="background: lightgray;">Register</button>
+			</form>
+		</div>
+
+		<div class="back-home">
+			<a href="index.html">&larr; Return to School Home Page</a>
+		</div>
+	</div>
+</body>
+</html>
