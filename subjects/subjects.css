@@ -235,6 +235,22 @@ body {
 	border: 0;
 }
 
+.fpart2 span{ 
+ padding:10px;
+ margin-left: 260px;
+ margin-top: 150px;
+ z-index: 2;
+ object-fit: cover;
+ position: absolute;
+ color: #9e0909;
+font-weight: 700;
+font-display: auto;
+
+
+
+
+}
+
 /* FOOTER */
 footer {
 	background: var(--dark-navy);
