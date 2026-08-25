@@ -234,22 +234,21 @@ body {
 	height: 100%;
 	border: 0;
 }
-
-.fpart2 span{ 
- padding:10px;
- margin-left: 260px;
- margin-top: 150px;
+.explore-btn {
+ padding:0px;
+ margin-left: 230px;
+ margin-top: 160px;
  z-index: 2;
  object-fit: cover;
  position: absolute;
- color: #9e0909;
+ color: #17cf2f;
 font-weight: 700;
 font-display: auto;
-
-
+box-shadow:0 10px 30px rgba(20, 32, 190, 0.08) ;
 
 
 }
+
 
 /* FOOTER */
 footer {
