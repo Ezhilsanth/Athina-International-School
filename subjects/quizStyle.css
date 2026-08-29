@@ -59,6 +59,31 @@ body {
 	transform: translateY(-2px);
 }
 
+/* FIXED BLUE HOME BUTTON */
+.nav ul li a.home {
+	color: var(--text-dark);
+	background:var(--primary-gradient);
+	border-radius: 16px;
+	font-weight:50px;
+	color: #f8fafc;
+	width: 70px;
+    
+   
+}
+
+
+.nav ul li a.home:hover {
+	color: #e2e8f0;
+	box-shadow: 0 4px 15px rgba(20, 32, 190, 0.4);
+
+	
+}
+.nav ul li a.home:active{
+	box-shadow: rgba(20, 32, 190, 0.4);
+	background:var(--primary-gradient);
+	color: #1420be;
+}
+
 /* PANEL */
 .panel {
 	max-width: 1000px;

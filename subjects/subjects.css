@@ -43,6 +43,7 @@ body {
 	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 
+
 .school-brand {
 	display: flex;
 	align-items: center;
@@ -80,17 +81,47 @@ body {
 	padding: 6px 12px;
 	border-radius: 8px;
 	transition: all 0.3s;
+
 }
 
 .nav ul li a:hover {
 	color: var(--primary-color);
-	background: rgba(20, 32, 190, 0.08);
+	background: rgba(14, 28, 231, 0.08);
+	display: flex;
 }
+
 
 .nav ul li a img.icon {
 	width: 18px;
 	height: 18px;
 }
+
+/* FIXED BLUE HOME BUTTON */
+.nav ul li a.home {
+	color: var(--text-dark);
+	background:var(--primary-gradient);
+	border-radius: 16px;
+	font-weight:50px;
+	color: #f8fafc;
+	width: 70px;
+    
+   
+}
+
+
+.nav ul li a.home:hover {
+	color: #e2e8f0;
+	box-shadow: 0 4px 15px rgba(20, 32, 190, 0.4);
+
+	
+}
+.nav ul li a.home:active{
+	box-shadow: rgba(20, 32, 190, 0.4);
+	background:var(--primary-gradient);
+	color: #1420be;
+}
+
+
 
 /* PAGE HEADER TITLE */
 .title {
@@ -234,17 +265,18 @@ body {
 	height: 100%;
 	border: 0;
 }
+
 .explore-btn {
- padding:0px;
- margin-left: 230px;
- margin-top: 160px;
- z-index: 2;
- object-fit: cover;
- position: absolute;
- color: #17cf2f;
-font-weight: 700;
-font-display: auto;
-box-shadow:0 10px 30px rgba(20, 32, 190, 0.08) ;
+	padding: 0px;
+	margin-left: 230px;
+	margin-top: 160px;
+	z-index: 2;
+	object-fit: cover;
+	position: absolute;
+	color: #17cf2f;
+	font-weight: 700;
+	font-display: auto;
+	box-shadow: 0 10px 30px rgba(20, 32, 190, 0.08);
 
 
 }
@@ -320,6 +352,7 @@ footer {
 	.switch-tab {
 		display: block;
 	}
+
 	#list-switch {
 		display: none;
 		flex-direction: column;
