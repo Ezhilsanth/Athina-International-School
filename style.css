@@ -404,8 +404,13 @@ nav ul li a.active {
 	height: auto;
 	border-radius: 16px;
 	box-shadow: var(--shadow-lg);
+    border: 4px solid #fff;
+	object-fit: cover;
+	transition: transform 0.5s ease;
 }
-
+.about-content.side-image img:hover{
+	transform: scale(02);
+}
 .about-content .side-text {
 	flex: 1 1 500px;
 	background: #fff;
@@ -437,7 +442,7 @@ nav ul li a.active {
 /* PORTFOLIO & STATS */
 .extra {
 	width: 100%;
-	background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url("images/extra/b1.jpg");
+	background: linear-gradient(rgba(40, 45, 54, 0.85), rgba(15, 23, 42, 0.85)), url("images/courses/po2.png.jpeg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -504,12 +509,12 @@ nav ul li a.active {
 	width: 320px;
 	box-shadow: var(--shadow-md);
 	border: 1px solid var(--border-light);
-	transition: all 0.3s ease;
+	transition: all 0.6s ease;
 	text-align: center;
 }
 
 .totalcard .card:hover {
-	transform: translateY(-5px);
+	transform: translateY(-18px);
 	box-shadow: var(--shadow-lg);
 }
 
