@@ -14,6 +14,8 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="script.js" defer></script>
 	<script>
+		// Navbar styling on scroll: adds 'black' class when user scrolls down 50px or more
+		// This darkens the navbar background for better contrast against the hero section
 		$(window).on('scroll', function () {
 			if ($(window).scrollTop() > 50) {
 				$('nav').addClass('black');
@@ -264,6 +266,13 @@
 		</div>
 		<div class="back-contact">
 			<div class="cc">
+				<!-- Contact form with validation
+					 Currently displays alert on submit and clears fields.
+					 To enable email delivery, integrate with email service:
+					 - Formspree: formspree.io
+					 - EmailJS: emailjs.com
+					 - Custom backend endpoint
+				-->
 				<form id="contactForm" onsubmit="handleContactSubmit(event)">
 					<div class="form-row">
 						<div>
@@ -320,6 +329,14 @@
 			<div class="footer-col">
 				<h3>Newsletter</h3>
 				<p>Subscribe to receive news, events, and admission updates from Athina International School.</p>
+				<!-- Newsletter subscription form
+					 Currently displays alert on submit and clears field.
+					 To capture emails, integrate with email marketing platform:
+					 - Mailchimp: mailchimp.com
+					 - SendGrid: sendgrid.com
+					 - ConvertKit: convertkit.com
+					 - Custom backend database
+				-->
 				<form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
 					<input type="email" placeholder="Enter your email" required>
 					<input type="submit" value="Subscribe">
